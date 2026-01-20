@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-display: 'Quicksand', sans-serif;
+    --font-tech: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-optical-sizing: auto;
+    background-color: #FFFFFF;
+    font-size: initial;
+}
+
+.head {
+    height: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-left {
+    width: 555px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 357px;
+    height: 58px;   
+    background-color: #ECF3F5;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 78px;
+}
+
+.search-bar input {
+    color: #89928E;
+    border: 0px;
+    height: 19px;
+    width: 220px;
+    background-color: #ECF3F5;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-display);
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.head-right {
+    width: 419px;
+    height: 58px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.calendar {
+    width: 223px;
+    font-size: 15px;
+    font-family: var(--font-display);
+    font-weight: 400;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar input {
+    display: none;
+}
+
+.btn {
+    color: #2C3832;
+    background-color: #B1CED4;
+    border-radius: 10px;
+    width: 175px;
+    height: 58px;
+    font-size: 16px;
+    font-family: var(--font-display);
+    font-weight: 500;
+    outline: none;
+    border: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    filter: brightness(0.90);
+}
+
+.btn:hover {
+    filter: brightness(1.00);
+}
+
+.row {
+    position: relative;
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+.row figure {
+    width: 203px;
+    height: 214px;
+    filter: brightness(0.95);
+}
+
+.row figure img {
+    width: 203px;
+    height: 143px;
+    display: block;
+    object-fit:cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+figure:hover {
+    filter: brightness(1.00);
+}
+
+figcaption {
+    background-color: #D8E6E9;
+    height: 71px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: #ECEDED;
+}    
+
+figcaption h3 {
+        color: #000000;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 10px;
+        font-family: var(--font-display);
+}
+
+.description {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-display);
+    width: 178px;
+    height: 23px;
+    padding: 10px 0px 0px 10px;
+}
+
+.description p {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.description span img {
+    width: 20px;
+    height: 17px;
+}
+
+.description span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.description span p {
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    background-color: #D89F65;
+    color: #FFFFFF;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0px 0px;
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+
+.percentage {
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    background-color: #EAF0F0;
+    color: #060D0F;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0px 0px;
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+
+.percentage sub {
+    font-size: 8px;
+}
+
+.food-type {
+    width: 949px;
+    height: 106px;
+    background-color: #EAF0F0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 100px;
+    margin-top: 30px;
+
+    button {
+        border: none;
+        border-radius: 10px;
+        background-color: #D9D9D9 ;
+        color: #A9A9A9;
+        width: 195px;
+        height: 58px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--font-display);
+    }
+
+    button:hover {
+        background-color: #4A5C2F;
+        color: #ECF3F5;
+    }
+}
